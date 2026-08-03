@@ -1,0 +1,26 @@
+SELECT
+    REGEXP_REPLACE(
+        TITLE,
+        '^.*https?://([^.]+)\\.jerseystem\\.org.*$',
+        '$1'
+    ) AS Subdomain,
+
+    REGEXP_REPLACE(
+        TITLE,
+        '^.*https?://[^.]+\\.jerseystem\\.org/([^)]+).*$',
+        '$1'
+    ) AS Alias,
+
+    CONCAT(
+        'https://docs.google.com/document/d/',
+        REGEXP_REPLACE(
+            OPEN_LINK,
+            '^.*[?&]id=([^&]+).*$',
+            '$1'
+        ),
+        '/edit'
+    ) AS URL
+
+FROM GAT_ETL.Drive_Files
+WHERE TITLE REGEXP
+    'alias:https?://[^.]+\\.jerseystem\\.org/[^[:space:])]+';
