@@ -14,13 +14,13 @@ This repository is organized to demonstrate both the development process and the
 
 # Repository Branches
 
-## `current-progress`
+## `previous-progress`
 
 This branch contains my work in progress while developing the project.
 
 It includes:
 
-- Current implementation of the Google Apps Script
+- Previous implementation of the Google Apps Script
 - Incremental feature development
 - Ongoing debugging and testing
 - Code before final review and integration
