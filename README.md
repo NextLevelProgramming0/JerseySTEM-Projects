@@ -14,7 +14,7 @@ This repository is organized to demonstrate both the development process and the
 
 # Repository Branches
 
-## `previous-progress`
+## `Version 1.1`
 
 This branch contains my work in progress while developing the project.
 
