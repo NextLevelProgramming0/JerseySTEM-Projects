@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS Team_TECH_BPA.script_tracker;
+
+CREATE TABLE IF NOT EXISTS Team_TECH_BPA.script_tracker (
+    name VARCHAR(200) NOT NULL,
+    function_name VARCHAR(100),
+    last_run TIMESTAMP NOT NULL,
+    last_success TIMESTAMP,
+    message TEXT,
+    url VARCHAR(1000),
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    inactive_date TIMESTAMP NULL,
+    PRIMARY KEY (name, function_name)
+);
