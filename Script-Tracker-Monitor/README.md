@@ -4,22 +4,54 @@
 
 Script Tracker Monitor is a Google Apps Script and MySQL automation project developed for JerseySTEM's **Tech Business Process Automation (Tech.BPA)** team.
 
-The project monitors the `Team_TECH_BPA.script_tracker` MySQL table to identify automation scripts that may require attention.
+This project is maintained as part of the consolidated **JerseySTEM-Projects** repository, which contains my JerseySTEM development projects and preserves their development history in one location.
+
+The application monitors the `Team_TECH_BPA.script_tracker` MySQL table to identify automation scripts that may require attention.
 
 The monitoring system currently checks for:
 
 * Scripts that have not run successfully for **3 or more days**
 * Scripts that have been marked **inactive**
-* Script tracking information that can help developers identify the affected automation
+* Script tracking information that can help developers identify affected automation
 * Direct links to affected scripts for faster investigation
 
 When an issue is detected, Google Apps Script processes the database results and generates Slack notifications so the Tech.BPA team can investigate automation problems without manually reviewing the `script_tracker` table.
 
-The repository preserves multiple versions of the project to demonstrate how the solution evolved from initial requirements and database design into a working monitoring and alerting system.
+The project evolved through multiple development versions, from the original requirements and database design through the completed monitoring and alerting implementation.
+
+---
+
+# JerseySTEM-Projects Repository
+
+This project is now maintained within the larger:
+
+`JerseySTEM-Projects`
+
+repository.
+
+The consolidated repository brings my JerseySTEM development work into a single GitHub repository rather than maintaining each project as a completely separate repository.
+
+Repository structure:
+
+```text
+JerseySTEM-Projects/
+│
+├── Script-Tracker-Monitor/
+│
+├── BlinkURL-My-SQL-Query/
+│
+└── README.md
+```
+
+This structure makes it easier to view the different projects I developed while contributing to JerseySTEM's Tech.BPA team while preserving the purpose and development history of each project.
 
 ---
 
 # Version History
+
+The Script Tracker Monitor project was developed incrementally through multiple versions.
+
+The version history documents the progression from the initial BPA-736 requirements through implementation, testing, code review, and integration with JerseySTEM's automation infrastructure.
 
 ## `Version-1.1`
 
@@ -100,16 +132,16 @@ JerseySTEM Automation Scripts
 Team_TECH_BPA.script_tracker
             |
             v
-      MySQL Queries
+       MySQL Queries
             |
             v
-   CheckScriptTracker.js
+    CheckScriptTracker.js
             |
             v
- Monitoring / Validation
+  Monitoring / Validation
             |
             v
-     Slack Notifications
+      Slack Notifications
 ```
 
 The `Team_TECH_BPA.script_tracker` table acts as the central source of information about automation script activity.
@@ -381,7 +413,9 @@ This project demonstrates experience with:
 * Existing Codebase Integration
 * Git Version Control
 * GitLab
+* GitHub
 * Merge Requests
+* Repository Consolidation
 * Incremental Software Development
 * Agile Team Collaboration
 * Code Review
@@ -390,7 +424,7 @@ This project demonstrates experience with:
 
 # Development Approach
 
-The repository preserves multiple versions of the project to demonstrate how the solution evolved throughout development.
+The project preserves the progression of the Script Tracker Monitor across multiple development versions.
 
 **Version 1.1** documents the original BPA-736 requirements, initial design, and planning for the monitoring system.
 
@@ -398,7 +432,9 @@ The repository preserves multiple versions of the project to demonstrate how the
 
 **Version 1.3** reflects the more complete JerseySTEM implementation, including dedicated `CheckScriptTracker.js` monitoring logic, updated runner integration, Slack alert improvements, direct script links, and changes made as part of the Tech.BPA automation repository workflow.
 
-The version history demonstrates the progression from understanding an existing automation system and its requirements to developing, testing, reviewing, and integrating a monitoring solution into an existing organizational codebase.
+The project's development history demonstrates the progression from understanding an existing automation system and its requirements to developing, testing, reviewing, and integrating a monitoring solution into an existing organizational codebase.
+
+The project was later consolidated into the `JerseySTEM-Projects` GitHub repository alongside my other JerseySTEM development work, providing a central location for projects completed while contributing to the Tech.BPA team.
 
 ---
 
