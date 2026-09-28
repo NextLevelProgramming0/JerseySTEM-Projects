@@ -1,0 +1,39 @@
+{
+  "timeZone": "America/New_York",
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "Database",
+        "libraryId": "1-417ctSSsLDb3vJK5rY7ZtRQQKG-xnQrQxx1ibjwzSZi2oND-sC2Vtzn",
+        "version": "14"
+      },
+      {
+        "userSymbol": "SlackIntegration",
+        "libraryId": "15JjALcmVdiWyPTq4UD082bhn4CFLs3bhuxe8miI8uR8h1KtcKkVHlRb6",
+        "version": "10"
+      },
+      {
+        "userSymbol": "OAuth2",
+        "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
+        "version": "43"
+      },
+      {
+        "userSymbol": "Slack",
+        "libraryId": "1cVUMJfP-i8j2_0aMgQzo8Ss4DY3PVBzUAaw4V64Ze-Ad9aN9Z038IEte",
+        "version": "6"
+      },
+      {
+        "userSymbol": "Runner",
+        "libraryId": "1J4kUGoazzpA-Tvv2_lEtgUWZZn9jylwShxg7UNy41-bhf6Jm8uZp7bem",
+        "version": "6"
+      },
+      {
+        "userSymbol": "Test",
+        "libraryId": "1F3pD23oFJQDptwrhiMJ_D4IHZ3sraPYgD4evf74TrfqEF_k0VfSa6DkF",
+        "version": "4"
+      }
+    ]
+  }
+}
